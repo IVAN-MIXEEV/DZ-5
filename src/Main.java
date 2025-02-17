@@ -20,14 +20,15 @@ public class Main {
             System.out.println("Установите облегченную версию IOS по ссылке");
         }
 //№3
-        int year = 2025;
-        if (year >= 1584) {
-            if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) {
-                System.out.println(year + " год является високосным.");
-            } else {
-                System.out.println(year + " год не является високосным");
-            }
+        int year = 1025;
+        if (year > 1584 && ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0))) {
+            System.out.println(year + " год является високосным");
+        } else if (year > 1584) {
+            System.out.println(year + " год не является високосным");
+        } else {
+            System.out.println("Год не может быть меньше 1585");
         }
+
 
 //№4
         int deliveryDistance = 63;
